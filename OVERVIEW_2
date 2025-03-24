@@ -1,0 +1,51 @@
+1.2. Expected Outcomes 
+1. Complete Algorithm Implementation:  
+o Fully functional CPU scheduler ready for integration into operating systems 
+o Reference implementation for both simulator and real hardware 
+2. Comprehensive Energy Management:  
+o DVFS controller with workload prediction: This component dynamically 
+adjusts CPU frequency and voltage based on predicted workload requirements, 
+finding the optimal balance between performance and energy consumption. 
+o Sleep state transition manager: This component determines when and how to 
+transition cores to various sleep states, calculating the energy break-even point 
+for each transition. 
+3. Developer Resources:  
+o Detailed algorithm documentation: This documentation follows industry 
+standards and provides clear guidance for implementing the algorithm in 
+various operating systems. 
+o Energy optimization guidelines: Comprehensive documentation on how to 
+configure the scheduler for different energy profiles and hardware capabilities. 
+o Performance tuning parameters: Documentation on how to adjust the 
+algorithm to prioritize either energy savings or performance based on specific 
+use cases. 
+4. Testing and Validation:  
+o Energy efficiency measurements: Quantitative analysis of energy savings 
+compared to traditional schedulers across various workloads and device types. 
+o Performance impact assessment: Detailed measurements of the performance 
+impact under different workloads, including real-time, interactive, and 
+background tasks. 
+o Thermal behavior analysis: Assessment of how the scheduler affects device 
+thermal characteristics and throttling behavior. 
+1.3. Project Scope 
+1. Development of core scheduling mechanisms: The Eco-Efficient CPU Scheduler 
+implements three core scheduling mechanisms: Task Classification, Energy-Aware 
+Dispatching, and State Transition Management. Each mechanism integrates DVFS 
+control, sleep state transitions, and workload prediction. 
+2. Design of a consistent API across platforms: The API is designed to work across 
+Linux, RTOS environments, and proprietary mobile operating systems, providing a 
+unified interface for energy-aware scheduling. 
+3. Support for both real-time and best-effort task scheduling: The algorithm 
+differentiates between tasks with hard deadlines and those with flexibility in 
+execution time. 
+4. Implementation of priority-based energy policies: The scheduler enforces energy 
+policies based on application priorities, user preferences, and system state. 
+5. Performance testing under various workload patterns: Testing includes simulated 
+workloads representing mobile gaming, web browsing, video playback, background 
+processing, and IoT sensing scenarios. 
+6. Support for heterogeneous computing environments: The algorithm can optimize 
+task placement across heterogeneous cores (big.LITTLE architecture) for maximum 
+energy efficiency. 
+7. Integration with existing power management frameworks: Compatibility with 
+ACPI, device-specific power management, and mobile platform power APIs. 
+8. Simulation tools for algorithm validation: Development of simulation environment 
+to test and visualize scheduler behavior before hardware implementation.
