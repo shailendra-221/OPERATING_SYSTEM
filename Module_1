@@ -1,0 +1,29 @@
+2.1. Module 1: Workload Analysis and Prediction Engine 
+Purpose: The Workload Analysis and Prediction Engine serves as the intelligence behind 
+energy-efficient scheduling decisions. It continuously monitors system behavior, analyzes 
+execution patterns, and predicts future computational demands. By understanding workload 
+characteristics and forecasting future needs, this module enables proactive resource allocation 
+that minimizes energy consumption while ensuring performance requirements are met. 
+Role: This module collects and analyzes execution metrics, classifies tasks based on their 
+computational and energy profiles, predicts future workload patterns, and provides this 
+intelligence to the scheduling core for making informed decisions about task execution 
+timing, core assignment, and frequency scaling. 
+2.2. Module 2: Energy-Aware Scheduling Core 
+Purpose: The Energy-Aware Scheduling Core is responsible for making optimal task 
+scheduling decisions that balance performance requirements with energy efficiency goals. It 
+determines which tasks run on which cores, when they execute, and at what processor 
+frequencies, all while minimizing overall power consumption and meeting performance 
+constraints. 
+Role: The Energy-Aware Scheduling Core serves as the central decision-making component 
+that integrates inputs from the Workload Analysis module with system power states to 
+produce an energy-optimized execution plan. It implements scheduling policies, manages 
+task queues, controls DVFS settings, and orchestrates transitions between power states to 
+achieve the best possible energy efficiency. 
+2.3. Module 3: Simulation and Evaluation Framework 
+Purpose: The Simulation and Evaluation Framework provides tools to test, validate, and 
+visualize the performance of the energy-efficient scheduling algorithm across various 
+scenarios without requiring physical hardware implementation. It enables rapid development 
+iterations, comprehensive testing, and detailed analysis of energy and performance metrics. 
+Role: This module provides a simulated environment for algorithm development and testing, 
+generates realistic workloads, collects performance and energy metrics, visualizes results, and 
+allows comparison with traditional scheduling approaches to quantify improvements. 
