@@ -1,0 +1,82 @@
+3. Functionalities 
+3.1. Module 1: Workload Analysis and Prediction Engine 
+1. Task Classification System:  
+o Categorizes processes based on computational intensity (high/medium/low) 
+o Identifies I/O-bound vs. CPU-bound tasks 
+o Determines task urgency and deadline requirements 
+o Classifies tasks as foreground (interactive) or background 
+o Maps applications to known energy profiles 
+2. Usage Pattern Recognition:  
+o Analyzes historical execution patterns 
+o Identifies periodic tasks and their intervals 
+o Detects user interaction patterns and active hours 
+o Recognizes application-specific behaviors 
+o Maintains a database of common application profiles 
+3. Workload Forecasting:  
+o Predicts short-term computational demand (1-5 seconds ahead) 
+o Estimates medium-term usage patterns (minutes to hours) 
+o Identifies upcoming intensive computational periods 
+o Forecasts idle periods for aggressive power saving 
+o Adapts predictions based on accuracy feedback 
+4. Energy Impact Assessment:  
+o Measures energy consumption of different task types 
+o Evaluates the energy cost of task migrations 
+o Calculates break-even points for sleep state transitions 
+o Assesses thermal impact of workload distribution 
+o Provides energy efficiency ratings for scheduling decisions 
+3.2. Module 2: Energy-Aware Scheduling Core 
+1. DVFS Controller:  
+o Implements dynamic voltage and frequency scaling 
+o Sets optimal frequency based on workload predictions 
+o Manages per-core frequency adjustments 
+o Implements race-to-idle policies when beneficial 
+o Ensures smooth transitions between frequency states 
+2. Task Dispatcher:  
+o Assigns tasks to appropriate cores based on energy profiles 
+o Implements task consolidation to maximize idle cores 
+o Manages core specialization for energy efficiency 
+o Handles task migrations with energy cost consideration 
+o Supports affinity hints from applications 
+3. Power State Manager:  
+o Controls core sleep state transitions (C-states) 
+o Manages processor package power states 
+o Implements wake-up prediction to minimize transition penalties 
+o Calculates optimal idle state depth based on predicted idle duration 
+o Coordinates with thermal management subsystems 
+4. Real-Time Constraint Handler:  
+o Ensures deadline guarantees for time-critical tasks 
+o Implements priority-based preemption with energy awareness 
+o Manages quality-of-service requirements 
+o Balances energy efficiency with timing guarantees 
+o Supports graceful degradation policies under energy constraints 
+3.3. Module 3: Simulation and Evaluation Framework 
+1. Workload Generator:  
+o Creates synthetic task sets with configurable characteristics 
+o Replays recorded real-world usage scenarios 
+o Simulates various device usage patterns (gaming, browsing, standby) 
+o Generates mixed workloads with varying priorities 
+o Produces repeatable test cases for algorithm comparison 
+2. Energy Consumption Simulator:  
+o Models CPU power draw at different frequencies and loads 
+o Simulates sleep state transition energy costs 
+o Accounts for memory and cache energy impacts 
+o Provides thermal modeling capabilities 
+o Simulates battery discharge characteristics 
+3. Performance Metrics Collector:  
+o Measures task completion times and deadline misses 
+o Calculates throughput and utilization metrics 
+o Tracks response time for interactive tasks 
+o Monitors quality of service parameters 
+o Records context switch frequency and overhead 
+4. Visualization Engine:  
+o Displays energy consumption over time with task correlation 
+o Shows CPU utilization and frequency scaling decisions 
+o Provides comparative views against traditional schedulers 
+o Visualizes core state transitions and idle periods 
+o Generates reports with key performance indicators 
+5. Algorithm Evaluation Tools:  
+o Compares results against established scheduling algorithms 
+o Performs sensitivity analysis for different parameters 
+o Identifies optimal configurations for various scenarios 
+o Calculates energy efficiency improvement percentages 
+o Generates statistical analysis of performance-energy tradeoffs
