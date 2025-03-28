@@ -1,0 +1,63 @@
+4. Technologies Used 
+This section outlines the recommended programming languages, libraries, and tools for 
+implementing an energy-efficient CPU scheduling algorithm. These technologies ensure 
+performance, compatibility, accurate simulation, and comprehensive analysis while 
+supporting various hardware platforms. 
+4.1. Programming Languages: 
+1. C:  
+o Used for the core scheduling algorithm requiring high performance and direct 
+system access. 
+o Provides low-level control over hardware features like frequency scaling. 
+o Suitable for kernel-level implementation in operating systems. 
+o Works well with existing OS scheduling frameworks. 
+Use cases:  
+o Kernel module implementation for Linux-based systems. 
+o Core scheduling logic and DVFS control. 
+o Low-level power state management. 
+2. C++:  
+o Used for simulation framework and algorithm prototyping. 
+o Provides object-oriented abstractions for complex models. 
+o Offers good performance while maintaining code organization. 
+o Supports hardware abstraction layers for cross-platform implementation. 
+Use cases:  
+o Simulation environment development. 
+o Hardware abstraction layers. 
+o Complex workload modeling and prediction algorithms. 
+3. Python:  
+o Used for data analysis, visualization, and rapid prototyping. 
+o Provides extensive libraries for statistical analysis and machine learning. 
+o Ideal for post-processing simulation results and generating reports. 
+o Supports scripting for test automation and parameter sweeps. 
+Use cases:  
+o Data analysis and visualization. 
+o Machine learning models for workload prediction. 
+o Test automation and configuration. 
+o Results processing and reporting. 
+4.2 Libraries and Tools 
+1. Core Scheduling and Energy Management:  
+o Linux Kernel Scheduler Framework: For implementing the algorithm in 
+Linux systems. 
+o FreeRTOS: For embedded systems implementation with real-time constraints. 
+o CPUFreq/CPUidle APIs: For controlling processor frequency and sleep 
+states. 
+o PAPI (Performance API): For accessing hardware performance counters. 
+o PowerTOP/Perf: For energy consumption monitoring and profiling. 
+2. Simulation and Modeling:  
+o SimPy: Discrete-event simulation framework for scheduler modeling. 
+o gem5: Full-system simulator for accurate CPU and memory modeling. 
+o SystemC: Hardware description language for system-level modeling. 
+o DiskSim: For modeling I/O subsystem energy consumption. 
+o McPAT: For modeling processor power consumption. 
+3. Analysis and Visualization:  
+o NumPy/SciPy: Scientific computing libraries for data analysis. 
+o Pandas: Data manipulation and analysis library. 
+o Matplotlib/Seaborn: Visualization libraries for generating graphs and plots. 
+o Jupyter Notebooks: For interactive development and result exploration. 
+o TensorFlow/PyTorch: For implementing machine learning-based workload 
+prediction. 
+4. Other Essential Tools:  
+o GitHub: Version control, CI/CD, and collaboration. 
+o CMake: Cross-platform build system for managing dependencies. 
+o Google Test: Unit testing framework for algorithm validation. 
+o Valgrind: Memory and performance profiling for optimization. 
+o Docker: Containerized environments for testing across different platforms.
