@@ -1,0 +1,80 @@
+ 6.
+ Repository Name: OPERATING_SYSTEM 
+GitHubLink:   
+o [https://github.com/shailendra-221/OPERATING_SYSTEM] 
+Conclusion and Future Scope 
+6.1
+ Conclusion: 
+The Eco-Efficient CPU Scheduling Algorithm provides a comprehensive solution for 
+energy- constrained computing environments requiring balanced performance and power 
+efficiency. By implementing a three-module architecture (Workload Analysis and 
+Prediction, Energy- Aware Scheduling Core, and Simulation/Evaluation Framework), the 
+algorithm delivers intelligent power management while maintaining system 
+responsiveness. The workload- aware approach enables proactive scheduling decisions 
+that significantly reduce energy consumption compared to traditional schedulers, 
+particularly in mobile and embedded systems where battery life is critical. 
+6.2
+ Future Scope: 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Heterogeneous Architecture Optimization: Enhance the scheduler to better 
+utilize big.LITTLE and other heterogeneous architectures 
+Machine Learning Integration: Implement deep learning techniques for 
+more accurate workload prediction 
+Hardware-Specific Optimizations: Develop specialized versions for popular 
+mobile SoCs 
+Thermal-Aware Scheduling: Add advanced thermal modeling and prediction 
+for improved throttling prevention 
+Energy Harvesting Integration: Adapt the scheduler for systems with 
+energy harvesting capabilities 
+Cross-Layer Optimization: Coordinate with application-level power 
+management APIs 
+Multi-Device Coordination: Extend to coordinate scheduling across 
+multiple connected devices in IoT contexts 
+Battery Health Optimization: Add scheduling policies that improve 
+battery longevity 
+Resource Isolation: Implement energy-aware resource isolation for 
+containerized applications 
+Hardware Acceleration: Utilize specialized hardware for more efficient 
+scheduling decisions 
+7.
+ References  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Pallipadi, V., & Starikovskiy, A. (2006). The ondemand governor: 
+Past, present, and future. In Proceedings of the Linux Symposium 
+(Vol. 2, pp. 223-238). 
+Kim, M., Kim, J., Geraci, S., & Hong, S. (2018). Current trends 
+in energy-aware scheduling. Sustainable Computing: Informatics 
+and Systems, 19, 1-8. 
+Benini, L., Bogliolo, A., & De Micheli, G. (2000). A survey of 
+design techniques for system-level dynamic power management. 
+IEEE Transactions on Very Large Scale Integration (VLSI) Systems, 
+8(3), 299-316. 
+Weiser, M., Welch, B., Demers, A., & Shenker, S. (1994). 
+Scheduling for reduced CPU energy. In OSDI (Vol. 94, pp. 13-23). 
+Carroll, A., & Heiser, G. (2010). An analysis of power consumption 
+in a smartphone. In USENIX annual technical conference (Vol. 14, 
+pp. 21-21). 
+Baruah, S. K., & Goossens, J. (2004). Scheduling real-time tasks: 
+Algorithms and complexity. Handbook of scheduling: Algorithms, 
+models, and performance analysis, 3, 1-15. 
+Mittal, S. (2014). A survey of techniques for improving energy 
+efficiency in embedded computing systems. International Journal of 
+Computer Aided Engineering and Technology, 6(4), 440-459. 
+ARM Ltd. (2015). big.LITTLE Technology: The Future of Mobile 
+Power Efficiency. ARM White Paper.
