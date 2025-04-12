@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy-Efficient CPU Scheduler</title>
+    <link rel="stylesheet" href="os.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bolt"></i> Energy-Efficient CPU Scheduler</h1>
+            <p class="subtitle">Optimizing power consumption for mobile and embedded systems</p>
+        </header>
+
+        <div class="control-panel">
+            <div class="input-group">
+                <label for="processCount">Number of Processes:</label>
+                <input type="number" id="processCount" min="1" max="20" value="5">
+            </div>
+            <div class="input-group">
+                <label for="maxBurst">Max Burst Time (ms):</label>
+                <input type="number" id="maxBurst" min="10" max="1000" value="100">
+            </div>
+            <div class="input-group">
+                <label for="maxArrival">Max Arrival Time (ms):</label>
+                <input type="number" id="maxArrival" min="0" max="500" value="50">
+            </div>
+            <div class="input-group">
+                <label for="maxPriority">Max Priority:</label>
+                <input type="number" id="maxPriority" min="1" max="10" value="5">
+            </div>
+            <div class="input-group">
+                <label for="algorithm">Scheduling Algorithm:</label>
+                <select id="algorithm">
+                    <option value="ee_fcfs">Energy-Efficient First come First Serve</option>
+                    <option value="ee_sjf">Energy-Efficient SJF</option>
+                    <option value="ee_rr">Energy-Efficient Round Robin</option>
+                    <option value="ee-ps">Energy-Efficient Priority Scheduling</option>
+                    <option value="dpm">Dynamic Power Management</option>
+                    <option value="freq_scaling">Frequency Scaling</option>
+                </select>
+            </div>
+            <button id="generateBtn" class="btn"><i class="fas fa-cogs"></i> Generate Processes</button>
+            <button id="runBtn" class="btn btn-primary"><i class="fas fa-play"></i> Run Scheduler</button>
+            <button id="resetBtn" class="btn btn-danger"><i class="fas fa-redo"></i> Reset</button>
+        </div>
+
+        <div class="results-container">
+            <div class="process-table-container">
+                <h2>Process Queue</h2>
+                <table id="processTable">
+                    <thead>
+                        <tr>
+                            <th>PID</th>
+                            <th>Burst Time</th>
+                            <th>Priority</th>
+                            <th>Arrival Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="processTableBody">
+                        <!-- Processes will be added here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stats-container">
+                <h2>Performance Metrics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="avgWaitTime">0</div>
+                        <div class="stat-label">Avg Wait Time (ms)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="avgTurnaround">0</div>
+                        <div class="stat-label">Avg Turnaround (ms)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="energyUsed">0</div>
+                        <div class="stat-label">Energy Used (mJ)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="energySaved">0%</div>
+                        <div class="stat-label">Energy Saved</div>
+                    </div>
+                </div>
+
+                <div class="gantt-chart-container">
+                    <h3>Execution Timeline <small>(Hover for details)</small></h3>
+                    <div id="ganttChart" class="gantt-chart">
+                        <!-- Gantt chart will be rendered here -->
+                    </div>
+                    <div id="ganttTooltip" class="gantt-tooltip"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h2><i class="fas fa-lightbulb"></i> Algorithm Explanation</h2>
+            <div id="algorithmExplanation">
+                <p>Select an algorithm to see its explanation here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="os.js"></script>
+</body>
+</html>
